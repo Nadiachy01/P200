@@ -1,27 +1,73 @@
+<!DOCTYPE html>
 <html>
-		<head>
-		<title>typing car- Game of typing</title>
-		<link rel="stylesheet" href="styl.css">
-		    </head>
-		    <body>
-		        <audio controls>
-		        <source src="https://drive.google.com/uc?id=1zpIOCJN2VkH7Cug56KLFDtYMAiV-Duea" type="audio/mpeg">
+<head>
+  <title>typing Racing-</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body style="overflow: hidden;">
+  <div class="fp" id="fp">
+    <p style="color: rgb(0, 196, 245); font-family:Impact;font-size: 70px;background-color: white; opacity: 80%; width: 350px;position: relative;
+       left: 44%; top: 280px;"> Type Racing </p>
+    <p style="background-color: aqua; opacity:79%;font-size: 36px;width: 580px; font-family: cursive; position: relative;left: 38%; 
+        top: 290px;border: 5px solid black;border-style: double;">A Typing game by Nahyan & Nadia</p>
+    <button type="button" id="button"
+      style="background-color: rgb(165, 221, 223); position: relative;left: 47%; top: 300px;width: 200px;font-size: 20px;">Click
+      Here To Play</button>
+  </div>
+  <div class="back">
+    <button onclick="playAudio()" type="button"style="background-color:#ffffff;; position: relative;left: 12%; top:12px;width:85px;font-size: 15px; z-index: 6;opacity: 40%;" >Play Music</button>
+    <button onclick="pauseAudio()" type="button"style="background-color:#ffffff;; position: relative;left: 12%; top:13px;width:90px;font-size:15px;z-index: 6;opacity: 40%;">Pause Music</button> 
+    <audio id="right">
+      <source src="right.mp3" type="audio/mp3">
+    </audio>
+    <audio id="wrong">
+      <source src="wrong.mp3" type="audio/mp3">
+    </audio>
+    <audio id="bgMusic">
+      <source src="bcgMusic.mp3" type="audio/mp3">
+    </audio>
+    <audio id="speed">
+      <source src="speed.mp3" type="audio/mp3">
+    </audio>
+    <audio id="brake">
+      <source src="brake.mp3" type="audio/mp3">
+    </audio>
+    <audio id="garir">
+      <source src="carSnd.mp3" type="audio/mp3">
+    </audio>
+    <audio id="crStrt">
+      <source src="gariStart.mp3" type="audio/mp3">
+    </audio>
+    <center><br>
+      <h4> Type Racing </h4>
+      <br>
+      <div class="wordsWrap">
+        <p class="words"></p>
+      </div>
+    </center>
+  </div>
+  <div class="road">
+  </div>
+  <div class="city"></div>
+  <div class="car" id="myCar">
+    <img src="gari.png">
+  </div>
+  <div class="wheel" id="caka">
+    <img src="chakka.png" class="b-wheel">
+    <img src="chakka.png" class="f-wheel">
+  </div>
+  <div class="car2" id="car2">
+    <img src="giphy (3).gif" id='car2Anim'>
+  </div>
+  <div class="car3" id="car3">
+    <img src="giphy (2).gif" id='car3Anim'>
+  </div>
+  <div class="car4" id="car4">
+    <img src="giphy (1).gif" id='car2Anim'>
+  </div>
+  <script src="script.js"></script>
 
-		        </audio>
-		        <div class="back">
-		            <div class="road">
-		            </div>
-		            <div class="city"></div>
-		             <div class="car">
-		                     <img src="https://drive.google.com/uc?id=16lgswE3yJLmlxGPbCNVVcGDKQa-1Rfdh">
+</body>
 
-		                </div>
-		            <div class="wheel">
-		            <img src="https://drive.google.com/uc?id=16r6P5gFzfYDPkE3_d7XEmj5H81e7C6Z1" class="b-wheel"> 
+</html>
 
-		                <img src="https://drive.google.com/uc?id=16r6P5gFzfYDPkE3_d7XEmj5H81e7C6Z1" class="f-wheel"> 
-
-		            </div>
-		        </div>
-		    </body>
-		</html>   

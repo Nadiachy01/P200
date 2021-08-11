@@ -1,10 +1,12 @@
+
 *
 {
     margin: 0;
     padding: 0;
 }
 .fp
-{
+{    
+    display: block;
     z-index: 3;
     width: 100%;
     height: 100%;
@@ -20,23 +22,11 @@ h4{
     width: 300px;
     height: 90%;
     font-family: Verdana;
-background-color: rgb(13, 13, 14);
-opacity: 60%;
+    background-color: rgb(13, 13, 14);
+    opacity: 60%;
     border: 5px solid rgb(255, 255, 255) ; 
     border-style: dotted;
     font-size: 50px;
-}
-audio
-{
-    width: 102px;
-    height: 16px;
-    display: block;
-    position: absolute;
-    bottom: 14vh;
-    z-index: 4;
-    left: 30vh;
-    opacity: 40%;
-    transform: rotate(6deg);
 }
 
 .back
@@ -61,7 +51,9 @@ audio
     right: 0;
     z-index: 1;
     background-repeat: repeat-x;
-    animation: road 5.5s linear infinite;   
+    animation: road 5.5s linear infinite;  
+    animation-delay: 0.5s;
+    animation-direction: normal; 
 }
 @keyframes road
 {
@@ -94,40 +86,40 @@ audio
     width: 100%;
     position: absolute;
     bottom: 10px;
-    left: 6%;
+    left: 2%;
     z-index:3;
 }
 .car img
-{
+{  height:258px ;
     width: 25%;
-    animation: car 2s linear infinite;
+    animation: car 1s linear infinite;
 }
 @keyframes car
 {
     100%{
-        transform: translateY(-2px)
+        transform: translateY(-2px);
     }
     50%{
-        transform: translateY(1px)
+        transform: translateY(1px);
+
     }
-    100%{
-        transform: translateY(-2px)
+    00%{
+        transform: translateY(-2px);
     }
 }
 .wheel
-{ 
-    left: 12%;
-    bottom: 110px;
-    transform: translateX(-30%);
-        position: absolute;
+{  
+    left: 8%;
+    bottom: 128px;
+    position: absolute;
     z-index: 3;
-        
+
 }
 .wheel img
 {
-    width:110px;
-    height: 110px;
-    animation: wheel .4s linear infinite;
+    width:106px;
+    height: 118px;
+    animation: wheel .5s linear infinite;
 }
 .b-wheel{
     left:-90px;
@@ -142,33 +134,119 @@ audio
         transform: rotate(360deg);
     }
 }
-
 .car2
+{
+    position: absolute;
+    width: 56%;
+    bottom: 90px;
+    left: 22%;
+    z-index: 2;
+}
+.car2 img
+{
+    height: 265px;
+    width: 27%;
+    filter: drop-shadow(0em 2em 2em black);
+    animation: car2 4s linear infinite;
+}
+@keyframes car2
+{
+    100%{
+        transform: translateY(-2px);
+        transform: translateX(20px);
+    }
+    50%{
+
+        transform: translateY(0px);
+        transform: translateX(0px);
+    } 
+
+    00%{
+        transform: translateY(-2px);
+        transform: translateX(20px);
+    }
+}
+
+.car3
+{
+    position: absolute;
+    width: 109%;
+    bottom: 17px;
+    left: 66%;
+    z-index: 2;
+
+}
+
+.car3 img
+{
+    height: 400px;
+    width: 18%;
+    filter: drop-shadow(0em 2em 2em black);
+    animation: car3 8s linear infinite;
+}
+@keyframes car3
+{
+    100%{
+        transform: translateY(-2px);
+        transform: translateX(-12px);
+    }
+    50%{
+
+        transform: translateY(0px);
+        transform: translateX(00px);
+    } 
+
+    00%{
+        transform: translateY(-2px);
+        transform: translateX(-12px);
+    }
+}
+
+
+.car4
 {
     width: 100%;
     position: absolute;
-    bottom: 45px;
-    left: 100%;
-    z-index:2;
+    bottom: -96px;
+    left: 39%;
+    z-index: 2;
 }
-
-.car2 img
+.car4 img
 {
-    height: 245px;
-    width: 25%;
-    filter: drop-shadow(0em 2em 2em black);
+  width: 27%;
+  height: 490px;
+  filter: drop-shadow(0em 2em 2em black);
+  animation: car4 5s linear infinite;
 }
-
-@keyframes car2
+@keyframes car4
 {
-    0%{
-        
-    
-      transform: translateX(200px);
-    }
-
     100%{
-      
-        transform: translateX(-4000px);
+        transform: translateY(-2px);
+        transform: translateX(15px);
+    }
+    50%{
+
+        transform: translateY(0px);
+        transform: translateX(00px);
+    } 
+
+    00%{
+        transform: translateY(-2px);
+        transform: translateX(15px);
     }
 }
+
+
+.wordsWrap {
+    margin-top: 50px;
+}
+.words span{
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: #ECF0F1;
+}
+.bg {
+    background-color: #06d622;
+}
+
+
